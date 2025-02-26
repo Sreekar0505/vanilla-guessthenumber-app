@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Guess the Number</h1>
+      <div class="limits">
+        <p>Choose a Limit</p>
+        <div>
+          <button class="limitBtn" value="10">10</button>
+          <button class="limitBtn" value="100">100</button>
+          <button class="limitBtn" value="1000">1000</button>
+        </div>
+      </div>
+      <div class="guessInput">
+        <label for="guessBox">Guess a number between 0 and 10:</label>
+        <input type="number" min="0" id="guessBox" />
+        <button disabled id="submitBtn">Submit</button>
+        <p id="suggestText">Come on!</p>
+      </div>
+      <button id="playAgain">Play Again</button>
+      <p id="triedList"></p>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
